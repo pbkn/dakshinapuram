@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Dakshinapuram</string>
+    <string name="dakshinapuram_name">Dakshinapuram</string>
+    <string name="shyams_name">Shyam\'s Hospitality</string>
+    <string name="loading_screen_name">A GROUP OF</string>
+    <string name="todays_spl_text">TODAY\'S SPL</string>
+    <string name="spl_starter_text">Today\'s special starter</string>
+    <string name="spl_main_text">Today\'s spl main</string>
+    <string name="new_line">\n</string>
+    <string name="spl_main_mon">Veg Biryani</string>
+    <string name="spl_starter_mon">Spicy Potato Finger</string>
+    <string name="spl_main_tue">Bisibillabath</string>
+    <string name="spl_starter_tue">Baby Corn Pakoda</string>
+    <string name="spl_main_wed">Chettinad Biryani</string>
+    <string name="spl_starter_wed">Spicy Banana Fry</string>
+    <string name="spl_main_thu">Mushroom Biryani</string>
+    <string name="spl_starter_thu">Crispy Cauliflower Fry</string>
+    <string name="spl_main_fri">Hyderabad Biryani</string>
+    <string name="spl_starter_fri">Baby Corn Pepper Fry</string>
+    <string name="spl_main_sat">Paneer Biryani</string>
+    <string name="spl_starter_sat">Baby Potato Masala</string>
+    <string name="spl_main_sun">Tri Color Cheese Rice</string>
+    <string name="spl_starter_sun">Appolo Paneer</string>
+    <string name="close_name">Close</string>
+    <string name="menu_dialog_title">MENU</string>
+    <string name="payment_name">Available Payment methods</string>
+    <string name="payment_mode_name">Available payment modes</string>
+    <string name="employee_name">Employee Details</string>
+    <string name="manager_name">Manager</string>
+    <string name="manager_text">Ganesan \n Manager</string>
+    <string name="manager_phone">Phone: +91 9566188815</string>
+    <string name="manager_mail">Mail id: vsganesan2k@gmail.com</string>
+    <string name="coffee_time"> A cup of Coffee ?</string>
+    <string name="breakfast_time">Don\'t rush your breakfast</string>
+    <string name="cooking_time">Fresh food on it\'s way</string>
+    <string name="lunch_time">Yummy lunch for you!!!</string>
+    <string name="cooking_time2">Busy cooking for you&#8230;</string>
+    <string name="tea_time">Let\'s talk with a drink</string>
+    <string name="dinner_time">Finally, it\'s dinner!!!</string>
+    <string name="closed_time">Sorry we\'re closed now, see you soon</string>
+    <string name="email_inquiry">Customer Enquiry @ Dakshinapuram, Karapakkam - reg</string>
+    <string name="email_chooser">Send mail via&#8230;</string>
+    <string name="about_text">About app</string>
+    <string name="backbutton_exit">Click BACK button again to exit</string>
+    <string name="no_internet_text">No Internet connection !</string>
+    <string name="call_text">Call</string>
+    <string name="mail_text">Email</string>
+    <string name="order_text">Order Online \n
+        via \n
+        partner apps</string>
+    <string name="wss_credit_text">App version 5.0: powered by WhySurfSwim</string>
+    <string name="dakshinapuram_about">Dakshinapuram - South - Indian Vegetarian cuisine \n
+        that symbolizes culinary trail from four states \n
+        Andhra, Tamilnadu, Karnataka and Kerala. \n
+        Probably the first Vegetarian restaurant that serves \n
+        breakfast, lunch, evening snacks and dinner. \n
+        Set up in a unique modern ambience alongside melodious songs \n
+        is reminiscent of an old South Indian home. \n \n
+        Restaurant Timing: \n
+        07:00 AM to 11:00 PM</string>
+    <string name="facebook_app_id">547838635590195</string>
+</resources>
