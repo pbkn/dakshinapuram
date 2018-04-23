@@ -3,33 +3,7 @@
     <string name="dakshinapuram_name">Dakshinapuram</string>
     <string name="shyams_name">Shyam\'s Hospitality</string>
     <string name="loading_screen_name">A GROUP OF</string>
-    <string name="todays_spl_text">TODAY\'S SPL</string>
-    <string name="spl_starter_text">Today\'s special starter</string>
-    <string name="spl_main_text">Today\'s spl main</string>
-    <string name="new_line">\n</string>
-    <string name="spl_main_mon">Veg Biryani</string>
-    <string name="spl_starter_mon">Spicy Potato Finger</string>
-    <string name="spl_main_tue">Bisibillabath</string>
-    <string name="spl_starter_tue">Baby Corn Pakoda</string>
-    <string name="spl_main_wed">Chettinad Biryani</string>
-    <string name="spl_starter_wed">Spicy Banana Fry</string>
-    <string name="spl_main_thu">Mushroom Biryani</string>
-    <string name="spl_starter_thu">Crispy Cauliflower Fry</string>
-    <string name="spl_main_fri">Hyderabad Biryani</string>
-    <string name="spl_starter_fri">Baby Corn Pepper Fry</string>
-    <string name="spl_main_sat">Paneer Biryani</string>
-    <string name="spl_starter_sat">Baby Potato Masala</string>
-    <string name="spl_main_sun">Tri Color Cheese Rice</string>
-    <string name="spl_starter_sun">Appolo Paneer</string>
     <string name="close_name">Close</string>
-    <string name="menu_dialog_title">MENU</string>
-    <string name="payment_name">Available Payment methods</string>
-    <string name="payment_mode_name">Available payment modes</string>
-    <string name="employee_name">Employee Details</string>
-    <string name="manager_name">Manager</string>
-    <string name="manager_text">Ganesan \n Manager</string>
-    <string name="manager_phone">Phone: +91 9629834444</string>
-    <string name="manager_mail">Mail id: info@shyamshospitality.com</string>
     <string name="coffee_time"> A cup of Coffee ?</string>
     <string name="breakfast_time">Don\'t rush your breakfast</string>
     <string name="cooking_time">Fresh food on it\'s way</string>
@@ -40,23 +14,161 @@
     <string name="closed_time">Sorry we\'re closed now, see you soon</string>
     <string name="email_inquiry">Customer Enquiry @ Dakshinapuram, Karapakkam - reg</string>
     <string name="email_chooser">Send mail via&#8230;</string>
-    <string name="about_text">About app</string>
     <string name="backbutton_exit">Click BACK button again to exit</string>
     <string name="no_internet_text">No Internet connection !</string>
     <string name="call_text">Call</string>
     <string name="mail_text">Email</string>
-    <string name="order_text">Order Online \n
-        via \n
-        partner apps</string>
-    <string name="wss_credit_text">App version 6.0: powered by WhySurfSwim</string>
-    <string name="dakshinapuram_about">Dakshinapuram - South - Indian Vegetarian cuisine \n
-        that symbolizes culinary trail from four states \n
-        Andhra, Tamilnadu, Karnataka and Kerala. \n
-        Probably the first Vegetarian restaurant that serves \n
-        breakfast, lunch, evening snacks and dinner. \n
-        Set up in a unique modern ambience alongside melodious songs \n
-        is reminiscent of an old South Indian home. \n \n
-        Restaurant Timing: \n
-        07:00 AM to 11:00 PM</string>
+    <string name="order_text">Order your food online and get delivery ASAP !!!</string>
+    <string name="wss_credit_text">Powered by WhySurfSwim</string>
     <string name="facebook_app_id">547838635590195</string>
+    <string name="retry_text">Retry</string>
+    <string name="available_payment_methods">You can pay via any of the available payment modes
+        below</string>
+    <string name="ae_payment">american express card</string>
+    <string name="card_payment">All debit/credit cards</string>
+    <string name="pt_payment">pay via PayTM</string>
+    <string name="sp_payment">Samsung Pay</string>
+    <string name="sd_payment"><![CDATA[Sodexo cards & coupons]]></string>
+    <string name="swiggy_button">SWIGGY</string>
+    <string name="zomato_button">ZOMATO</string>
+    <string name="follow_official">Follow us to get tasty foods on your timeline</string>
+    <string name="follow_fb">FACEBOOK</string>
+    <string name="follow_twitter">TWITTER</string>
+    <string name="follow_instagram">INSTAGRAM</string>
+    <string name="follow_whatsapp">WHATSAPP</string>
+    <string name="contact_text">Your visit and suggestions are more valuable to us to serve you better</string>
+    <string name="go_to_map">NAVIGATE ME</string>
+    <string name="map">Dakshinapuram google location</string>
+    <string name="menu_text">A feast for your eyes with out wide variety of menu</string>
+    <string name="soup">SOUPS</string>
+    <string name="starters">STARTERS</string>
+    <string name="biryani">BIRYANI</string>
+    <string name="fried_rice">FRIED RICE</string>
+    <string name="meals">MEALS</string>
+    <string name="dosa">DOSA</string>
+    <string name="tiffin">TIFFIN</string>
+    <string name="dry">DRY</string>
+    <string name="gravy">GRAVY</string>
+    <string name="desserts">DESSERTS</string>
+
+    <string-array name="soups_array">
+        <item>Tomato Soup</item>
+        <item>Sweet Corn Soup</item>
+        <item>Drum-Stick Soup</item>
+    </string-array>
+
+    <string-array name="starters_array">
+        <item>Crispy Corn</item>
+        <item>Veg Burbura</item>
+        <item>Cauliflower Fry</item>
+        <item>Mushroom Fry</item>
+        <item>Tawa Chilly Panner</item>
+        <item>Chepankilangu Fry</item>
+        <item>Spicy Banana Fry</item>
+        <item>Spicy Potato Fingers</item>
+        <item>Apollo Panner</item>
+        <item>Babycorn Pakoda</item>
+        <item>Vada Platter</item>
+    </string-array>
+
+    <string-array name="biryani_array">
+        <item>Hyd. Dum Biryani</item>
+        <item>Baby Potato Biryani</item>
+        <item>Chettinad Biryani</item>
+        <item>Ulavu Charu Biryani</item>
+    </string-array>
+
+    <string-array name="fried_rice_array">
+        <item>Sweet Corn Fried Rice</item>
+        <item>Mushroom Fried Rice</item>
+        <item>Tri Color Fried Rice</item>
+        <item>Kashmiri Fried Rice</item>
+    </string-array>
+
+    <string-array name="rice_array">
+        <item>Avakkai Rice</item>
+        <item>Karuvepagu Annam</item>
+        <item>Bisibelabath</item>
+        <item>Curd Rice</item>
+        <item>Steamed Rice</item>
+        <item>Meals (Only @lunch)</item>
+    </string-array>
+
+    <string-array name="dosa_array">
+        <item>Ragi Dosa</item>
+        <item>Wheat Dosa</item>
+        <item>Plain Dosa</item>
+        <item>Neer Dosa</item>
+        <item>Rava Dosa</item>
+        <item>Rava Masal Dosa</item>
+        <item>Ghee Roast</item>
+        <item>Mysore Masal Dosa</item>
+        <item>Neyi Karam Dosa</item>
+        <item>Benne Dosa</item>
+        <item>Pesarattu Dosa</item>
+        <item>Onion Pesarattu Dosa</item>
+        <item>Spring Onion Dosa</item>
+        <item>Onion Utthappam</item>
+        <item>Onion Ghee Roast</item>
+        <item>Cheese Dosa</item>
+        <item>Panner Masala Dosa</item>
+        <item>Panner Cheese Dosa</item>
+        <item>Butter Dosa</item>
+        <item>Butter Upma Dosa</item>
+        <item>Adai</item>
+    </string-array>
+
+    <string-array name="tiffin_array">
+        <item>Chappathi</item>
+        <item>Phulka</item>
+        <item>Parotta</item>
+        <item>Kuzhi Paniyaram</item>
+        <item>Akki Roti</item>
+        <item>Oats Roti</item>
+        <item>Joladha Roti</item>
+        <item>Veechu Parotta</item>
+        <item>Tenkasi Chilly Parotta</item>
+        <item>Appam</item>
+        <item>Idiyappam</item>
+        <item>Puttu</item>
+    </string-array>
+
+    <string-array name="fry_array">
+        <item>Panner Bhurji</item>
+        <item>Spicy Banana Roast</item>
+        <item>Peas and Panner Chukka</item>
+        <item>Baby Potato Fry</item>
+        <item>Masala Fry</item>
+        <item>Vankaya Karam</item>
+    </string-array>
+
+    <string-array name="gravy_array">
+        <item>Kadala Curry</item>
+        <item>Mix. Kuruma</item>
+        <item>Ullitheeyal</item>
+        <item>Ennai Kathirikai</item>
+        <item>Kaju Capsicum Masala</item>
+        <item>Methi Kara Pappu</item>
+        <item>Mushroom Masala</item>
+        <item>Hyd. Panner Masala</item>
+        <item>Veg Stew</item>
+        <item>Mochaikottai Kuzhambu</item>
+        <item>Pondu Kuzhambu</item>
+    </string-array>
+
+    <string-array name="desserts_array">
+        <item>Brownie with Ice-cream</item>
+        <item>Falooda</item>
+        <item>Ghee Bholi</item>
+        <item>Ela Ada</item>
+        <item>Paal Paniyaram</item>
+        <item>Paal Adapradham</item>
+        <item>Fruit Salad</item>
+    </string-array>
+    <string name="offers">OFFERS</string>
+    <string name="about">About</string>
+    <string name="review">Review/Rate app</string>
+    <string name="subscribe">Privileged Customer Subscirption</string>
+    <string name="dakshinapuram_credits"><![CDATA[Dakshinapuram - South - Indian Vegetarian cuisine that symbolizes culinary trail from four states - Andhra, Tamilnadu, Karnataka and Kerala. Probably the first Vegetarian restaurant that serves breakfast, lunch, evening snacks & dinner.Our Culinary expertise has some of the famous dishes like Jack Fruit Biryani, Tenkasi Chilly Parotta, Benne Dosa, Ghee Karam Dosa, Peas Paneer Chukka, Baby potato masala fry Kuzhi paniyaram etc. You also have options for fresh juices, mock tails like Kokum Sherbet, Watermelon lemonade Jigarthanda etc.Set up in a unique modern ambience alongside melodious songs is reminiscent of an old South Indian home.  Restaurant Timing: 07:00 AM to 11:00 PM]]></string>
+    <string name="settings">SETTINGS</string>
 </resources>

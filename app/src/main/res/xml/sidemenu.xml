@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/offers"
+            android:checked="false"
+            android:icon="@drawable/ic_local_offer_black_24dp"
+            android:title="OFFERS" />
+        <item
+            android:id="@+id/todaysSpl"
+            android:checked="false"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="TODAY'S SPL" />
+        <item
+            android:id="@+id/menu"
+            android:checked="false"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="MENU" />
+        <item
+            android:id="@+id/order"
+            android:checked="false"
+            android:icon="@drawable/ic_phone_android_black_24dp"
+            android:title="ORDER ONLINE" />
+        <item
+            android:id="@+id/follow"
+            android:checked="false"
+            android:icon="@drawable/ic_photo_filter_black_24dp"
+            android:title="FOLLOW US" />
+        <item
+            android:id="@+id/contact"
+            android:checked="false"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="CONTACT US" />
+        <item
+            android:id="@+id/games"
+            android:checked="false"
+            android:icon="@drawable/ic_videogame_asset_black_24dp"
+            android:title="MINI GAMES" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about"
+            android:checked="false"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="ABOUT" />
+        <item
+            android:id="@+id/review"
+            android:checked="false"
+            android:icon="@drawable/ic_star_border_black_24dp"
+            android:title="REVIEW" />
+        <item
+            android:id="@+id/subscribe"
+            android:checked="false"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="SUBSCRIBE" />
+    </group>
+</menu>

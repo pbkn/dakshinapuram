@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light">
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
+    tools:context="com.whysurfswim.dakshinapuram.MainActivity">
 
-    <ImageView
-        android:id="@+id/menuImageView"
+    <ListView
+        android:id="@+id/menuListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/closeDialogButton"
-        android:contentDescription="@string/dakshinapuram_name"
-        app:srcCompat="@drawable/menu_intro" />
-
-    <Button
-        android:id="@+id/closeDialogButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"
         android:background="@android:color/holo_orange_light"
-        android:text="@string/close_name"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-</RelativeLayout>
+        android:divider="@android:color/holo_green_dark"
+        android:dividerHeight="@dimen/cardview_compat_inset_shadow"
+        android:scrollbars="vertical" />
+</LinearLayout>

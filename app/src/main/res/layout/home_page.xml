@@ -8,321 +8,70 @@
     android:background="@android:color/holo_orange_light"
     tools:context="com.whysurfswim.dakshinapuram.MainActivity">
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/menuToolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="?attr/actionBarSize"
         android:layout_alignParentStart="true"
-        android:background="@android:color/white"
-        android:focusable="true"
-        android:theme="@style/AppTheme"
-        android:visibility="visible"
-        app:adSize="SMART_BANNER"
-        app:adUnitId="ca-app-pub-6059528612565667/3631467294" />
-
-    <TextView
-        android:id="@+id/dummyTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/new_line" />
-
-    <TextView
-        android:id="@+id/orderTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/swiggyButton"
-        android:layout_alignParentStart="true"
-        android:background="@android:color/transparent"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/order_text"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="14sp"
-        android:textStyle="bold" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/menuButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginStart="@android:dimen/app_icon_size"
-        android:clickable="true"
-        android:focusable="true"
-        app:backgroundTint="@color/ic_launcher_background"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_restaurant_menu_black_24dp" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/facebookButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/menuButton"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="center"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/facebook" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/twitterButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/facebookButton"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="center"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/twitter" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/instagramButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/twitterButton"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="center"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/instagram" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/whatsappButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/instagramButton"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="center"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/whatsapp" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/shareButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/employeeButton"
-        android:layout_alignParentEnd="true"
-        android:clickable="true"
-        android:focusable="true"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_linked_camera_black_24dp" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/employeeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/aboutButton"
-        android:layout_alignParentEnd="true"
-        android:clickable="true"
-        android:focusable="true"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_business_center_black_48dp" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/aboutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/locationButton"
-        android:layout_alignParentEnd="true"
-        android:clickable="true"
-        android:focusable="true"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_public_black_24dp" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/locationButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/infoButton"
-        android:layout_alignParentEnd="true"
-        android:clickable="true"
-        android:focusable="true"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_navigation_black_24dp" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/infoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/payViewFlipper"
-        android:layout_alignParentEnd="true"
-        android:clickable="true"
-        android:focusable="true"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_home_black_24dp" />
-
-    <TextView
-        android:id="@+id/timeTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/menuButton"
-        android:fontFamily="serif"
-        android:text="@string/menu_dialog_title"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:textStyle="bold|italic" />
-
-    <TextView
-        android:id="@+id/splTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/timeTextView"
-        android:layout_centerInParent="true"
-        android:fontFamily="serif"
-        android:text="@string/todays_spl_text"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="30sp"
-        android:textStyle="bold|italic" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/swiggyButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/splViewFlipper"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="center"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/swiggy" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/zomatoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/swiggyButton"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="center"
-        app:backgroundTint="@android:color/background_light"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/zomoto" />
-
-    <ViewFlipper
-        android:id="@+id/splViewFlipper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/splTextView"
-        android:layout_centerVertical="true">
-
-        <ImageView
-            android:id="@+id/starterImageView"
-            android:layout_width="match_parent"
-            android:layout_height="@android:dimen/thumbnail_width"
-            android:contentDescription="@string/spl_starter_text"
-            android:scaleType="center"
-            app:srcCompat="@drawable/fri_spl_starter" />
-
-        <ImageView
-            android:id="@+id/mainImageView"
-            android:layout_width="match_parent"
-            android:layout_height="@android:dimen/thumbnail_width"
-            android:contentDescription="@string/spl_main_text"
-            android:scaleType="center"
-            app:srcCompat="@drawable/fri_spl_main" />
-
-    </ViewFlipper>
-
-    <TextView
-        android:id="@+id/splDishTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/splViewFlipper"
-        android:layout_centerInParent="true"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/todays_spl_text"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:textStyle="bold|italic" />
-
-    <TextView
-        android:id="@+id/paymentTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/payViewFlipper"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/payment_name"
-        android:textColor="@android:color/background_light"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
-
-    <ViewFlipper
-        android:id="@+id/payViewFlipper"
-        android:layout_width="match_parent"
-        android:layout_height="@android:dimen/app_icon_size"
-        android:layout_above="@+id/adView"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true">
-
-        <ImageView
-            android:id="@+id/paymentSamsungImageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/payment_mode_name"
-            app:srcCompat="@drawable/samsungpay" />
-
-        <ImageView
-            android:id="@+id/paymentCardImageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/payment_mode_name"
-            app:srcCompat="@drawable/debitcreditcard" />
-
-        <ImageView
-            android:id="@+id/paymentSodexoImageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/payment_mode_name"
-            app:srcCompat="@drawable/sodexo" />
-
-        <ImageView
-            android:id="@+id/paymentAmericanImageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/payment_mode_name"
-            app:srcCompat="@drawable/americanexpress" />
-
-        <ImageView
-            android:id="@+id/paymentPaytmImageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/payment_mode_name"
-            app:srcCompat="@drawable/paytm" />
-
-    </ViewFlipper>
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
     <android.support.v4.widget.DrawerLayout
-        android:id="@+id/sidemenuLayout"
+        android:id="@+id/sidemenuDrawerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/menuToolbar"
         android:fitsSystemWindows="true"
-        android:visibility="visible">
+        tools:openDrawer="start">
 
-        <ListView
-            android:id="@+id/sidemenuListView"
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/AppTheme"
+                app:expanded="true">
+
+                <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:fontFamily="serif"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="fill"
+                    app:tabMode="scrollable" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.AppBarLayout>
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/sidemenuNavigationView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="top|start"
-            android:background="@android:color/holo_orange_dark"
-            android:divider="@android:color/black" />
+            android:layout_alignParentStart="true"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/sidemenu_header"
+            app:menu="@xml/sidemenu" />
+
     </android.support.v4.widget.DrawerLayout>
 
 </RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuTabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.whysurfswim.dakshinapuram.MainActivity">
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/menu_text"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:id="@+id/menuScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/descriptionTextView">
+
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal">
+
+                <Button
+                    android:id="@+id/soupButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/soup"
+                    android:drawableTop="@drawable/soup"
+                    android:scaleType="fitCenter"
+                    android:text="@string/soup"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/starterButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/starters"
+                    android:drawableTop="@drawable/starters"
+                    android:scaleType="fitCenter"
+                    android:text="@string/starters"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal">
+
+                <Button
+                    android:id="@+id/biryaniButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/biryani"
+                    android:drawableTop="@drawable/biryani"
+                    android:scaleType="fitCenter"
+                    android:text="@string/biryani"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/friedRiceButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/fried_rice"
+                    android:drawableTop="@drawable/friedrice"
+                    android:scaleType="fitCenter"
+                    android:text="@string/fried_rice"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal">
+
+                <Button
+                    android:id="@+id/mealsButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/meals"
+                    android:drawableTop="@drawable/rice"
+                    android:scaleType="fitCenter"
+                    android:text="@string/meals"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/dosaButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/dosa"
+                    android:drawableTop="@drawable/dosa"
+                    android:scaleType="fitCenter"
+                    android:text="@string/dosa"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal">
+
+                <Button
+                    android:id="@+id/tiffinButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/tiffin"
+                    android:drawableTop="@drawable/tiffin"
+                    android:scaleType="fitCenter"
+                    android:text="@string/tiffin"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/dryButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/dry"
+                    android:drawableTop="@drawable/fry"
+                    android:scaleType="fitCenter"
+                    android:text="@string/dry"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal">
+
+                <Button
+                    android:id="@+id/gravyButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/gravy"
+                    android:drawableTop="@drawable/gravy"
+                    android:scaleType="fitCenter"
+                    android:text="@string/gravy"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <Button
+                    android:id="@+id/dessertsButton"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/desserts"
+                    android:drawableTop="@drawable/desserts"
+                    android:scaleType="fitCenter"
+                    android:text="@string/desserts"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:theme="@style/AppTheme"
+        android:visibility="visible"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-6059528612565667/3631467294" />
+
+
+</RelativeLayout>
