@@ -67,7 +67,8 @@ public class ContactTab extends Fragment {
             public void onClick(View view) {
                 if (((MainActivity) getActivity()).isOnline()) {
                     Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:info@shyamshospitality," +
-                            "contactpbkn@whysurfswim.com,contactlakshadeep@whysurfswim.com"));
+                            "contactpbkn@whysurfswim.com,contactlakshadeep@whysurfswim.com,dakshinapuramomr@gmail" +
+                            ".com"));
                     emailIntent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_inquiry));
                     startActivity(Intent.createChooser(emailIntent, getResources().getString(R.string.email_chooser)));
                 }
