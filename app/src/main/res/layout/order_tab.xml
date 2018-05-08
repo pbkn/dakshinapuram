@@ -19,98 +19,101 @@
         android:textSize="14sp"
         android:textStyle="bold|italic" />
 
-    <Button
-        android:id="@+id/swiggyButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/descriptionTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/holo_orange_dark"
-        android:clickable="true"
-        android:drawableStart="@drawable/swiggy"
-        android:focusable="true"
-        android:scaleType="center"
-        android:text="@string/swiggy_button" />
-
-    <Button
-        android:id="@+id/zomatoButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/swiggyButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/holo_red_dark"
-        android:clickable="true"
-        android:drawableStart="@drawable/zomoto"
-        android:focusable="true"
-        android:scaleType="center"
-        android:text="@string/zomato_button"
-        android:textColor="@android:color/background_light" />
-
-    <TextView
-        android:id="@+id/availablePaymentMethods"
+    <ScrollView
+        android:id="@+id/menuScrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/zomatoButton"
-        android:fontFamily="serif"
-        android:text="@string/available_payment_methods"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="14sp"
-        android:textStyle="bold|italic" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/descriptionTextView">
 
-    <ImageView
-        android:id="@+id/aeImageView"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_below="@+id/availablePaymentMethods"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/ae_payment"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/americanexpress" />
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
 
-    <ImageView
-        android:id="@+id/cardImageView"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_below="@+id/aeImageView"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/card_payment"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/debitcreditcard" />
+            <Button
+                android:id="@+id/swiggyButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/holo_orange_dark"
+                android:clickable="true"
+                android:drawableStart="@drawable/swiggy"
+                android:focusable="true"
+                android:scaleType="center"
+                android:text="@string/swiggy_button" />
 
-    <ImageView
-        android:id="@+id/ptImageView"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_below="@+id/cardImageView"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/pt_payment"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/paytm" />
+            <Button
+                android:id="@+id/zomatoButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/holo_red_dark"
+                android:clickable="true"
+                android:drawableStart="@drawable/zomoto"
+                android:focusable="true"
+                android:scaleType="center"
+                android:text="@string/zomato_button"
+                android:textColor="@android:color/background_light" />
 
-    <ImageView
-        android:id="@+id/spImageView"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_below="@+id/ptImageView"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/sp_payment"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/samsungpay" />
+            <TextView
+                android:id="@+id/availablePaymentMethods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/available_payment_methods"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
 
-    <ImageView
-        android:id="@+id/sdImageView"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="@android:dimen/notification_large_icon_height"
-        android:layout_below="@+id/spImageView"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/sd_payment"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/sodexo" />
+            <ImageView
+                android:id="@+id/aeImageView"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:contentDescription="@string/ae_payment"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/americanexpress" />
+
+            <ImageView
+                android:id="@+id/cardImageView"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:contentDescription="@string/card_payment"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/debitcreditcard" />
+
+            <ImageView
+                android:id="@+id/ptImageView"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:contentDescription="@string/pt_payment"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/paytm" />
+
+            <ImageView
+                android:id="@+id/spImageView"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:contentDescription="@string/sp_payment"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/samsungpay" />
+
+            <ImageView
+                android:id="@+id/sdImageView"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:contentDescription="@string/sd_payment"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/sodexo" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -122,7 +125,7 @@
         android:focusable="true"
         android:theme="@style/AppTheme"
         android:visibility="visible"
-        app:adSize="SMART_BANNER"
+        app:adSize="BANNER"
         app:adUnitId="ca-app-pub-6059528612565667/3631467294" />
 
 </RelativeLayout>

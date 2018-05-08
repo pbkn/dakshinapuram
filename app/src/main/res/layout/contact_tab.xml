@@ -29,39 +29,53 @@
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/map" />
 
-    <Button
-        android:id="@+id/phoneButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/mapImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/background_light"
-        android:clickable="true"
-        android:drawableStart="@drawable/ic_phone_forwarded_black_24dp"
-        android:focusable="true"
-        android:paddingEnd="11dp"
-        android:paddingStart="11dp"
-        android:scaleType="center"
-        android:text="@string/call_text" />
+    <ScrollView
+        android:id="@+id/menuScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mapImageView">
 
-    <Button
-        android:id="@+id/mailButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/phoneButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/background_light"
-        android:clickable="true"
-        android:drawableStart="@drawable/ic_contact_mail_black_24dp"
-        android:focusable="true"
-        android:paddingEnd="11dp"
-        android:paddingStart="11dp"
-        android:scaleType="center"
-        android:text="@string/mail_text" />
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <Button
+                android:id="@+id/phoneButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/background_light"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_phone_forwarded_black_24dp"
+                android:focusable="true"
+                android:paddingEnd="11dp"
+                android:paddingStart="11dp"
+                android:scaleType="center"
+                android:text="@string/call_text" />
+
+            <Button
+                android:id="@+id/mailButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/background_light"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_contact_mail_black_24dp"
+                android:focusable="true"
+                android:paddingEnd="11dp"
+                android:paddingStart="11dp"
+                android:scaleType="center"
+                android:text="@string/mail_text" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -73,7 +87,7 @@
         android:focusable="true"
         android:theme="@style/AppTheme"
         android:visibility="visible"
-        app:adSize="SMART_BANNER"
+        app:adSize="BANNER"
         app:adUnitId="ca-app-pub-6059528612565667/3631467294" />
 
 </RelativeLayout>

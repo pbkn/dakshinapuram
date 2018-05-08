@@ -75,14 +75,12 @@
         <item>Hyd. Dum Biryani</item>
         <item>Baby Potato Biryani</item>
         <item>Chettinad Biryani</item>
-        <item>Ulavu Charu Biryani</item>
     </string-array>
 
     <string-array name="fried_rice_array">
         <item>Sweet Corn Fried Rice</item>
         <item>Mushroom Fried Rice</item>
         <item>Tri Color Fried Rice</item>
-        <item>Kashmiri Fried Rice</item>
     </string-array>
 
     <string-array name="rice_array">
@@ -124,7 +122,6 @@
         <item>Parotta</item>
         <item>Kuzhi Paniyaram</item>
         <item>Akki Roti</item>
-        <item>Oats Roti</item>
         <item>Joladha Roti</item>
         <item>Veechu Parotta</item>
         <item>Tenkasi Chilly Parotta</item>
@@ -137,8 +134,7 @@
         <item>Panner Bhurji</item>
         <item>Spicy Banana Roast</item>
         <item>Peas and Panner Chukka</item>
-        <item>Baby Potato Fry</item>
-        <item>Masala Fry</item>
+        <item>Baby Potato Masala Fry</item>
         <item>Vankaya Karam</item>
     </string-array>
 
@@ -159,7 +155,7 @@
     <string-array name="desserts_array">
         <item>Brownie with Ice-cream</item>
         <item>Falooda</item>
-        <item>Ghee Bholi</item>
+        <item>Ghee Poli</item>
         <item>Ela Ada</item>
         <item>Paal Paniyaram</item>
         <item>Paal Adapradham</item>

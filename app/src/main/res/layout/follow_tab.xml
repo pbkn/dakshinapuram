@@ -19,65 +19,75 @@
         android:textSize="14sp"
         android:textStyle="bold|italic" />
 
-    <Button
-        android:id="@+id/facebookButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/descriptionTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/background_light"
-        android:clickable="true"
-        android:drawableStart="@drawable/facebook"
-        android:focusable="true"
-        android:scaleType="center"
-        android:text="@string/follow_fb" />
+    <ScrollView
+        android:id="@+id/menuScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/descriptionTextView">
 
-    <Button
-        android:id="@+id/twitterButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/facebookButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/background_light"
-        android:clickable="true"
-        android:drawableStart="@drawable/twitter"
-        android:focusable="true"
-        android:scaleType="center"
-        android:text="@string/follow_twitter" />
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
 
-    <Button
-        android:id="@+id/instagramButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/twitterButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/background_light"
-        android:clickable="true"
-        android:drawableStart="@drawable/instagram"
-        android:focusable="true"
-        android:scaleType="center"
-        android:text="@string/follow_instagram" />
+            <Button
+                android:id="@+id/facebookButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/background_light"
+                android:clickable="true"
+                android:drawableStart="@drawable/facebook"
+                android:focusable="true"
+                android:scaleType="center"
+                android:text="@string/follow_fb" />
 
-    <Button
-        android:id="@+id/whatsappButton"
-        android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/instagramButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginTop="11dp"
-        android:background="@android:color/background_light"
-        android:clickable="true"
-        android:drawableStart="@drawable/whatsapp"
-        android:focusable="true"
-        android:scaleType="center"
-        android:text="@string/follow_whatsapp" />
+            <Button
+                android:id="@+id/twitterButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/background_light"
+                android:clickable="true"
+                android:drawableStart="@drawable/twitter"
+                android:focusable="true"
+                android:scaleType="center"
+                android:text="@string/follow_twitter" />
+
+            <Button
+                android:id="@+id/instagramButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/background_light"
+                android:clickable="true"
+                android:drawableStart="@drawable/instagram"
+                android:focusable="true"
+                android:scaleType="center"
+                android:text="@string/follow_instagram" />
+
+            <Button
+                android:id="@+id/whatsappButton"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/background_light"
+                android:clickable="true"
+                android:drawableStart="@drawable/whatsapp"
+                android:focusable="true"
+                android:scaleType="center"
+                android:text="@string/follow_whatsapp" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -89,7 +99,7 @@
         android:focusable="true"
         android:theme="@style/AppTheme"
         android:visibility="visible"
-        app:adSize="SMART_BANNER"
+        app:adSize="BANNER"
         app:adUnitId="ca-app-pub-6059528612565667/3631467294" />
 
 
