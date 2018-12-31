@@ -1,2 +1,4 @@
 # dakshinapuram
-A menu view and social sharing app for restuarant
+This app is solely for Educational purpose only.
+
+It contains TabView and Sidemenu and WebView implementations.
