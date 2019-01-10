@@ -1,4 +1,4 @@
 # dakshinapuram
-This app is solely for Educational purpose only.
+This app is solely for Educational purpose and should not be used commercially.
 
-It contains TabView and Sidemenu and WebView implementations.
+It contains TabView, Sidemenu and WebView implementations.
